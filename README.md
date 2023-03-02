@@ -1,42 +1,40 @@
+# k'
 
-# <Title>
+## Description
 
-## <Description>
+g
 
-<description answer>
+## Table of Contents
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## <Table of Contents>
+## Installation
 
-<table of contents list>
+d
 
-## <Installation>
+## Usage
 
-<installation instructions>
+f
 
-## <Usage>
+## Credits
 
-<usage instructions>
-
-## <Credits>
-
-<collaborators>
+g
 
 ## License
 
-<license options>
+license options
 
 ## Badges
 
-<badges list>
+badges list
 
 ## Features
 
-<list of features>
+list of features
 
 ## How to Contribute
 
-<contrbuting instructions>
+contributing instructions
 
 ## Tests
 
-<test instructions>
+ISC License (ISC)

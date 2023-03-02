@@ -46,52 +46,58 @@ const questions = [
     name: "test",
   },
 
+  {
+    type: "list",
+    message: "What license do you have?",
+    choices: [ "The MIT License", new inquirer.Separator(), "Mozilla Public License 2.0", new inquirer.Separator(), "ISC License (ISC)"],
+    name: "test",
+  },
 ];
 
 // FUNCTIONS
 // TODO: Create a function to write README file
 function generateMarkdown(answers) {
+
   const markdown = `# ${answers.title}
 
-## <Description>
+## Description
 
-<${answers.description}>
+${answers.description}
 
-## <Table of Contents>
+## Table of Contents
 
 
-## <Installation>
+## Installation
 
-<${answers.installation}>
+${answers.installation}
 
-## <Usage>
+## Usage
 
-<${answers.usage}>
+${answers.usage}
 
-## <Credits>
+## Credits
 
-<${answers.contribution}>
+${answers.contribution}
 
 ## License
 
-<license options>
+license options
 
 ## Badges
 
-<badges list>
+badges list
 
 ## Features
 
-<list of features>
+list of features
 
 ## How to Contribute
 
-<contributing instructions>
+contributing instructions
 
 ## Tests
 
-<${answers.test}>`
-
+${answers.test}`
   console.log(markdown);
   return markdown;
 }
@@ -99,6 +105,7 @@ function generateMarkdown(answers) {
 function writeToFile(fileName, data) {
   fs.writeFile(fileName,data,(err) => err ? console.error(err) : console.log('Success!'));
 }
+
 
 // TODO: Create a function to initialize app
 function init() {}
