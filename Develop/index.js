@@ -51,11 +51,47 @@ const questions = [
 // FUNCTIONS
 // TODO: Create a function to write README file
 function generateMarkdown(answers) {
-  const markdown = `# ${answers.title} \n
-## ${answers.installation} \n
-## ${answers.usage} \n
-## ${answers.contribution} \n
-## ${answers.test}`
+  const markdown = `# ${answers.title}
+
+## <Description>
+
+<${answers.description}>
+
+## <Table of Contents>
+
+
+## <Installation>
+
+<${answers.installation}>
+
+## <Usage>
+
+<${answers.usage}>
+
+## <Credits>
+
+<${answers.contribution}>
+
+## License
+
+<license options>
+
+## Badges
+
+<badges list>
+
+## Features
+
+<list of features>
+
+## How to Contribute
+
+<contributing instructions>
+
+## Tests
+
+<${answers.test}>`
+
   console.log(markdown);
   return markdown;
 }
