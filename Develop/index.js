@@ -12,7 +12,7 @@ const questions = [
   // title
   {
     type: "input",
-    message: "What title would you like to use for your README?",
+    message: "What title would you like to use for your Repository?",
     name: "title",
   },
   // description
@@ -45,13 +45,17 @@ const questions = [
     message: "How can other users test out your application?",
     name: "test",
   },
-  
+
 ];
 
 // FUNCTIONS
 // TODO: Create a function to write README file
 function generateMarkdown(answers) {
-  const markdown = `# ${answers.title} `
+  const markdown = `# ${answers.title} \n
+## ${answers.installation} \n
+## ${answers.usage} \n
+## ${answers.contribution} \n
+## ${answers.test}`
   console.log(markdown);
   return markdown;
 }
