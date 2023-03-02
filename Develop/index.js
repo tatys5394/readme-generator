@@ -12,16 +12,40 @@ const questions = [
   // title
   {
     type: "input",
-    message: "What's the tile of your README?",
+    message: "What title would you like to use for your README?",
     name: "title",
   },
   // description
   {
     type: "input",
-    message: "Write a description of your assignment",
+    message: "Provide a description of your application",
     name: "description",
   },
   // installation instructions
+  {
+    type: "input",
+    message: "Provide a list of installation instructions",
+    name: "installation",
+  },
+  // usage information
+  {
+    type: "input",
+    message: "Provide a list of instructions on how to use your application",
+    name: "usage",
+  },
+  // contribution guidelines
+  {
+    type: "input",
+    message: "If other developers wanted to contribute to your project, how can they do that? (provide detailed instructions)",
+    name: "contribution",
+  },
+  // test instructions
+  {
+    type: "input",
+    message: "How can other users test out your application?",
+    name: "test",
+  },
+  
 ];
 
 // FUNCTIONS
