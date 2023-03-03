@@ -36,7 +36,7 @@ const questions = [
   // contribution guidelines
   {
     type: "input",
-    message: "If other developers wanted to contribute to your project, how can they do that? (provide detailed instructions)",
+    message: "If other developers wanted to contribute to your project, how can they do that?",
     name: "contribution",
   },
   // test instructions
@@ -69,10 +69,6 @@ const questions = [
 // FUNCTIONS
 // TODO: Create a function to write README file
 function generateMarkdown(answers) {
-  
-//   const badges = licenseOptions() {"The MIT License", "Mozilla Public License 2.0", "ISC License (ISC)";
-// };
-
   const markdown = `# ${answers.title}
 
 ## Description
@@ -81,6 +77,9 @@ ${answers.description}
 
 ## Table of Contents
 
+* [Questions](#questions)
+* [Contributing](#how to Contribute)
+* [Test](#test)
 
 ## Installation
 
@@ -98,23 +97,19 @@ ${answers.contribution}
 
 ![GitHub license](https://img.shields.io/badge/License-${answers.license}-blue.svg)
 
-
 ## Questions 
 
 Username: https://github.com/${answers.username} \n
 
-Email: ${answers.email}
-
-## Features
-
-list of features
+If you have any other questions please contact me using the following email address: ${answers.email}
 
 ## How to Contribute
 
-contributing instructions
+${answers.contribution}
 
 ## Tests
 ${answers.test}`
+
   console.log(markdown);
   return markdown;
 }
