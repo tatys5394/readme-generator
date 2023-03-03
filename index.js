@@ -49,14 +49,29 @@ const questions = [
   {
     type: "list",
     message: "What license do you have?",
-    choices: [ "The MIT License", new inquirer.Separator(), "Mozilla Public License 2.0", new inquirer.Separator(), "ISC License (ISC)"],
-    name: "test",
+    choices: [ "MIT", new inquirer.Separator(), "Mozilla_2.0", new inquirer.Separator(), "ISC"],
+    name: "license",
   },
+
+  {
+    type: "input",
+    message: "What is your GitHub username?",
+    name: "username",
+  },
+
+  {
+    type: "input",
+    message: "What is your email?",
+    name: "email",
+  }
 ];
 
 // FUNCTIONS
 // TODO: Create a function to write README file
 function generateMarkdown(answers) {
+  
+//   const badges = licenseOptions() {"The MIT License", "Mozilla Public License 2.0", "ISC License (ISC)";
+// };
 
   const markdown = `# ${answers.title}
 
@@ -81,11 +96,14 @@ ${answers.contribution}
 
 ## License
 
-license options
+![GitHub license](https://img.shields.io/badge/License-${answers.license}-blue.svg)
 
-## Badges
 
-badges list
+## Questions 
+
+Username: https://github.com/${answers.username} \n
+
+Email: ${answers.email}
 
 ## Features
 
@@ -96,7 +114,6 @@ list of features
 contributing instructions
 
 ## Tests
-
 ${answers.test}`
   console.log(markdown);
   return markdown;
@@ -105,7 +122,6 @@ ${answers.test}`
 function writeToFile(fileName, data) {
   fs.writeFile(fileName,data,(err) => err ? console.error(err) : console.log('Success!'));
 }
-
 
 // TODO: Create a function to initialize app
 function init() {}
