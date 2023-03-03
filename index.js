@@ -78,7 +78,7 @@ ${answers.description}
 ## Table of Contents
 
 * [Questions](#questions)
-* [Contributing](#how to Contribute)
+* [Contributing](#contribution)
 * [Test](#test)
 
 ## Installation
@@ -88,10 +88,6 @@ ${answers.installation}
 ## Usage
 
 ${answers.usage}
-
-## Credits
-
-${answers.contribution}
 
 ## License
 
@@ -103,7 +99,7 @@ Username: https://github.com/${answers.username} \n
 
 If you have any other questions please contact me using the following email address: ${answers.email}
 
-## How to Contribute
+## Contributing
 
 ${answers.contribution}
 

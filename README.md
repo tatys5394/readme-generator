@@ -2,24 +2,19 @@
 
 ## Description
 
-h
+j
 
 ## Table of Contents
 
 * [Questions](#questions)
-* [Contributing](#contribute)
+* [Contributing](#contribution)
 * [Test](#test)
-
 
 ## Installation
 
 f
 
 ## Usage
-
-f
-
-## Credits
 
 d
 
@@ -29,14 +24,14 @@ d
 
 ## Questions 
 
-Username: https://github.com/ty 
+Username: https://github.com/tat 
 
 
-If you have any other questions please contact me using the following email address: t@gmail.com
+If you have any other questions please contact me using the following email address: tcastro@gmail.com
 
-## Contribute
+## Contributing
 
-d
+ww
 
 ## Tests
-e
+f
